@@ -10,11 +10,17 @@
 /*Layout*/
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
   justify-content: center;
   align-items: center;
   width: 80vw;
   height: 80vh;
   margin: 10vh 10vw 10vh 10vw;
   border: 2px solid red; /*for debugging*/
+}
+
+.etch-box {
+  border: 1px solid red; /*for debugging*/
 }
