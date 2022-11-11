@@ -9,10 +9,18 @@
 
 /*Layout*/
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
 .newGridButton {
   width: 10vw;
   height: 10vh;
-  margin: 2.5vh 45vw 2.5vh 45vw;
+  margin: 2.5vh 0vw 2.5vh 0vw;
   background-color: grey;
   border: 0.1rem solid black;
   border-radius: 0.3rem;
@@ -22,7 +30,7 @@
   background-color: lightgrey;
 }
 
-.container {
+.etch-container {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
@@ -30,7 +38,7 @@
   align-items: center;
   width: 80vh;
   height: 80vh;
-  margin: 0vh 35vw 5vh 35vw;
+  margin: 0vh 0vw 5vh 0vw;
   /* border: 2px solid red; for debugging */
 }
 

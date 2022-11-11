@@ -1,5 +1,5 @@
 // Global variables
-const container = document.querySelector(".container");
+const container = document.querySelector(".etch-container");
 const newGridbtn = document.querySelector(".newGridButton");
 let gridSize = 16;
 
