@@ -9,15 +9,28 @@
 
 /*Layout*/
 
+.newGridButton {
+  width: 10vw;
+  height: 10vh;
+  margin: 2.5vh 45vw 2.5vh 45vw;
+  background-color: grey;
+  border: 0.1rem solid black;
+  border-radius: 0.3rem;
+}
+
+.newGridButton:hover {
+  background-color: lightgrey;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
   justify-content: center;
   align-items: center;
-  width: 80vw;
+  width: 80vh;
   height: 80vh;
-  margin: 10vh 10vw 10vh 10vw;
+  margin: 0vh 35vw 5vh 35vw;
   /* border: 2px solid red; for debugging */
 }
 
