@@ -18,11 +18,16 @@
   width: 80vw;
   height: 80vh;
   margin: 10vh 10vw 10vh 10vw;
-  border: 2px solid red; /*for debugging*/
+  /* border: 2px solid red; for debugging */
 }
 
 .etch-box {
   height: 100%;
   width: 100%;
-  border: 1px solid red; /*for debugging*/
+  background-color: gray;
+  /* border: 1px solid red; for debugging */
+}
+
+.etch-box-active {
+  background-color: white;
 }
