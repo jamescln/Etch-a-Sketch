@@ -39,16 +39,10 @@
   width: 80vh;
   height: 80vh;
   margin: 0vh 0vw 5vh 0vw;
-  /* border: 2px solid red; for debugging */
 }
 
 .etch-box {
   height: 100%;
   width: 100%;
   background-color: gray;
-  /* border: 1px solid red; for debugging */
-}
-
-.etch-box-active {
-  background-color: white;
 }
