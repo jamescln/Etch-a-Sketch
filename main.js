@@ -16,22 +16,27 @@ const createGrid = function () {
 };
 
 const createNewGrid = function () {
-  for (let i = 0; i < gridSize * gridSize; i++) {
-    container.removeChild(container.lastChild);
-  }
-  gridSize = Number(prompt("How big do you want the grid? (From 10 to 100)."));
-  container.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
-  container.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
-  if (gridSize >= 10 && gridSize <= 100) {
+  let newGridSize = Number(
+    prompt("How big do you want the grid? (From 10 to 100).")
+  );
+
+  if (newGridSize >= 10 && newGridSize <= 100) {
+    for (let i = 0; i < gridSize * gridSize; i++) {
+      container.removeChild(container.lastChild);
+    }
+    gridSize = newGridSize;
+    container.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
+    container.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
     createGrid();
   } else {
-    console.log(gridSize);
+    alert("Invalid Grid Size. Please Enter a Valid Grid Size");
+    createNewGrid();
   }
 };
 
 // Other
 
-newGridbtn.onclick = (event) => {
+newGridbtn.onclick = () => {
   createNewGrid();
 };
 
