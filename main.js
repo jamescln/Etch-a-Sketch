@@ -9,7 +9,9 @@ const createGrid = function () {
     const etchBox = document.createElement("div");
     etchBox.className = "etch-box";
     etchBox.onmouseover = (event) => {
-      event.target.className = "etch-box-active";
+      // event.target.className = "etch-box-active";
+      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      event.target.style.backgroundColor = "#" + randomColor;
     };
     container.appendChild(etchBox);
   }
